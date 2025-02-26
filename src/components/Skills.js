@@ -16,13 +16,13 @@ const skills = [
 
 const Skills = () => {
   return (
-    <section id="skills" className="bg-gray-100 py-10 lg:-mt-5 dark:bg-gray-900 px-10">
-      <div className="container mx-auto xl:text-start sm:text-center text-center xl:px-5 xl:py-5">
-        <h2 className="text-4xl font-bold text-gray-700 mb-6 xl:ml-[10%] md:ml-[-10%] lg:ml-[2%] animate-bounce dark:text-gray-200">My Skills</h2>
-        <p className="text-gray-500 mb-8 text-lg xl:ml-[10%] sm:ml-[5%] dark:text-gray-200">
+    <section id="skills" className="bg-gray-100 py-10  dark:bg-gray-900 px-10  scroll-mt-24">
+      <div className="  mx-auto xl:text-start sm:text-center text-center xl:px-5 xl:py-5">
+        <h2 className="text-4xl font-bold text-gray-700 mb-6 xl:ml-[5%] md:ml-[-10%] lg:ml-[2%] animate-bounce dark:text-gray-200 ">My Skills</h2>
+        <p className="text-gray-500 mb-8 text-lg xl:ml-[5%] sm:ml-[5%] dark:text-gray-200 xl:text-start lg:text-center">
           Here are some technologies I am proficient in
         </p>
-        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8 xl:p-10 xl:mx-[6%] lg:mx-[6%] md:mx-[6%]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-8 xl:p-10 xl:mx-[2.2%] lg:mx-[6%] md:mx-[6%]">
           {skills.map((skill, index) => (
             <div
               key={index}

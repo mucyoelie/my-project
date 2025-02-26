@@ -7,7 +7,9 @@ const Navbar = () => {
     localStorage.getItem("theme") === "light"
   );
 
-  const toggleMenu = () => setIsOpen(!isOpen);
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
@@ -21,7 +23,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white text-gray-600 shadow-lg fixed w-full z-10 h-[10%] top-0 dark:bg-gray-900 dark:text-white">
+    <nav className="bg-white text-gray-600 shadow-lg fixed w-full z-10 h-[10%] top-0 dark:bg-gray-900 dark:text-white border-b-2 border-[#006242] dark:border-[#B0B0B0]">
       <div className="container mx-auto px-4 flex justify-between items-center h-16">
         {/* Logo */}
         <div className="text-2xl font-bold">
@@ -35,28 +37,34 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex space-x-8 items-center justify-end flex-grow">
+        <div className="hidden md:flex space-x-8 items-center justify-end flex-grow font-bold">
+          <a
+            href="#home"
+            className="hover:text-[#006242] transition duration-200"
+          >
+            Home
+          </a>
           <a
             href="#about"
-            className="hover:text-green-500 transition duration-200"
+            className=" hover:text-[#006242] transition duration-200"
           >
             About me
           </a>
           <a
-            href="#projects"
-            className="hover:text-green-500 transition duration-200"
+            href="#project"
+            className="hover:text-[#006242] transition duration-200"
           >
             Projects
           </a>
           <a
             href="#skills"
-            className="hover:text-green-500 transition duration-200"
+            className="hover:text-[#006242] transition duration-200"
           >
             Skills
           </a>
           <a
             href="#contact"
-            className="hover:text-green-500 transition duration-200"
+            className="hover:text-[#006242] transition duration-200"
           >
             Contact
           </a>
@@ -108,29 +116,36 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden bg-gray-200 dark:bg-gray-800 h-[40rem] text-center py-10 text-3xl">
           <a
+            href="#home"
+            className="block px-4 py-4 hover:bg-gray-600 hover:text-[#006242]" onClick={toggleMenu}
+          >
+            Home
+          </a>
+          <a
             href="#about"
-            className="block px-4 py-4 hover:bg-gray-600 hover:text-orange-500"
+            className="block px-4 py-4 hover:bg-gray-600 hover:text-[#006242]" onClick={toggleMenu}
           >
             About
           </a>
           <a
             href="#projects"
-            className="block px-4 py-4 hover:bg-gray-600 hover:text-orange-500"
+            className="block px-4 py-4 hover:bg-gray-600 hover:text-[#006242]" onClick={toggleMenu}
           >
             Projects
           </a>
           <a
             href="#skills"
-            className="block px-4 py-4 hover:bg-gray-600 hover:text-orange-500"
+            className="block px-4 py-4 hover:bg-gray-600 hover:text-[#006242]" onClick={toggleMenu}
           >
             Skills
           </a>
           <a
             href="#contact"
-            className="block px-4 py-4  hover:bg-gray-600 hover:text-orange-500"
+            className="block px-4 py-4  hover:bg-gray-600 hover:text-[#006242]" onClick={toggleMenu}
           >
             Contact
           </a>
+         
           <button
             onClick={toggleDarkMode}
             className="ml-4 p-2 rounded-full focus:outline-none transition duration-300 "
@@ -142,6 +157,7 @@ const Navbar = () => {
               <BsSunFill className="text-yellow-400 text-3xl" />
             )}
           </button>
+     
         </div>
        
       )}
