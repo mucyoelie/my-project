@@ -36,15 +36,15 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="scroll-mt-24 bg-gray-100 from-blue-500 via-teal-500 to-green-500 py-16 px-4 sm:px-6 lg:px-8 dark:bg-gray-900 ">
-      <div className="max-w-4xl mx-auto xl:text-start sm:text-center text-center text-gray-600 dark:text-gray-200 xl:ml-20">
+    <section id="contact" className="xl:scroll-mt-24  bg-gray-100 from-blue-500 via-teal-500 to-green-500 py-16 px-4 sm:px-6 lg:px-8 dark:bg-gray-900 ">
+      <div className=" xl:text-start sm:text-center text-center text-gray-600 dark:text-gray-200 xl:ml-20">
         <h2 className="text-5xl sm:text-4xl font-bold mb-6 animate-bounce mx-auto xl:mx-[20px]">Contact Me</h2>
         <p className="text-lg sm:text-xl mb-10 max-w-3xl mx-auto xl:mx-[20px]">
           I would love to hear from you! Whether you have a question or an opportunity you'd like to discuss, feel free to reach out to me.
         </p>
 
-        <div className="bg-white bg-opacity-90 shadow-lg rounded-lg p-8  dark:bg-gray-800  lg:mx-[2%] md:mx-[2%] ">
-          <form onSubmit={handleSubmit} className="border-b-2  border-[#006242] dark:border-[#B0B0B0]">
+        <div className="bg-white bg-opacity-90 shadow-lg rounded-lg p-8  dark:bg-gray-800  xl:mr-20 xl:ml-2 lg:mx-[7%] md:mx-[2%] dark:text-gray-100">
+          <form onSubmit={handleSubmit} className="border-b-2 border-[#006242]">
             <div className="grid xl:grid-cols-2 grid-cols-1 gap-6">
               <div className="dark:text-gray-100">
                 <label htmlFor="name" className="block text-gray-700 font-medium mb-2 dark:text-gray-100">Name</label>

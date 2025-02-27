@@ -26,7 +26,7 @@ const About = () => {
     </p>
    {/* Image content */}
           
-           <div className="flex sm:justify-end lg:justify-end  lg:w-[88%]  md:justify-center md:ml-[-17%] xl:absolute xl:top-[5%] xl:right-[5%] xl:w-[28%]">
+           <div className="flex sm:justify-end lg:justify-end  lg:w-[88%]  md:justify-center md:ml-[-17%] xl:absolute xl:bottom-[10%] xl:right-[5%] xl:w-[28%]">
             <img
               src="Mucyo.png" // Replace with your image path
               alt="Elie Joseph MUCYO"

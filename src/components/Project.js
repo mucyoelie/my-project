@@ -31,17 +31,17 @@ const Project = () => {
 
     return (
         <section id="project" className="bg-gray-100 py-10 px-6 dark:bg-gray-900 scroll-mt-24">
-            <div className="mx-auto text-start max-w-7xl xl:ml-24 ">
-                <h1 className="text-3xl md:text-4xl font-bold lg:text-center xl:text-start  text-gray-700 dark:text-gray-200 mb-4 xl:mx-0 lg:mx-[7%] md:mx-[6%] animate-bounce">
+            <div className=" text-start xl:ml-24 ">
+                <h1 className="text-3xl md:text-4xl font-bold lg:text-center xl:text-start  text-gray-700 dark:text-gray-200 mb-4 xl:mx-[1%] lg:mx-[7%] md:mx-[6%] animate-bounce">
                     Projects
                 </h1>
-                <p className="text-gray-500 dark:text-gray-300 lg:text-center xl:text-start text-lg mb-8 xl:mx-0 lg:mx-[7%] md:mx-[6%]">
+                <p className="text-gray-500 dark:text-gray-300 lg:text-center xl:text-start text-lg mb-8 xl:mx-[1%] lg:mx-[7%] md:mx-[6%]">
                     Here are some of the projects I've successfully completed.
                 </p>
 
-                <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-2  gap-8 xl:w-[80rem] xl:mx-0 lg:mx-[7%] md:mx-[6%]">
+                <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-2   gap-8 xl:ml-2 lg:mx-[7%] md:mx-[6%]">
                     {projects.map((project, index) => (
-                        <div key={index} className="bg-white p-5 rounded-lg shadow-lg dark:bg-gray-800">
+                        <div key={index} className="bg-white py-2 px-2 rounded-lg shadow-lg dark:bg-gray-800 space-x-2">
                             {/* Project Image */}
                             <img 
                                 src={project.image} 
