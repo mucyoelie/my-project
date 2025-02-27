@@ -20,13 +20,14 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    
     emailjs
-      .sendForm("service_aik7uq7", "mucyoelie84@gmail.com", e.target, "52dm6uzigMPT3hDqZ") // Replace with your actual IDs
+      .sendForm("service_aik7uq7", "mucyoelie84@gmail.com", e.target, "52dm6uzigMPT3hDqZ") 
       .then(
         (result) => {
           alert("Message Sent Successfully!");
           console.log(result.text);
+          setFormData({ name: "", email: "", phone: "", message: "" }); // Clear the form after sending
         },
         (error) => {
           alert("Error: Message not sent!");
@@ -47,7 +48,7 @@ const Contact = () => {
           <form onSubmit={handleSubmit} className="border-b-2 border-[#006242]">
             <div className="grid xl:grid-cols-2 grid-cols-1 gap-6">
               <div className="dark:text-gray-100">
-                <label htmlFor="name" className="block text-gray-700 font-medium mb-2 dark:text-gray-100">Name</label>
+                <label htmlFor="name" className="block text-gray-700 font-bold mb-2 dark:text-gray-100">Name</label>
                 <input
                   type="text"
                   id="name"
@@ -60,7 +61,7 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <label htmlFor="phone" className="block text-gray-700 font-medium mb-2 dark:text-gray-100">Telephone</label>
+                <label htmlFor="phone" className="block text-gray-700 font-bold mb-2 dark:text-gray-100">Telephone</label>
                 <input
                   type="tel"
                   id="phone"
@@ -74,7 +75,7 @@ const Contact = () => {
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-gray-700 font-medium mb-2 dark:text-gray-100">Email</label>
+                <label htmlFor="email" className="block text-gray-700 font-bold mb-2 dark:text-gray-100">Email</label>
                 <input
                   type="email"
                   id="email"
